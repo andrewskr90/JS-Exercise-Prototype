@@ -108,15 +108,18 @@ function Airplane(name) {
   Baby.prototype.play = function(){
     return `Playing with ${this.favoriteToy}`;
   }
+
+  const bennie = new Baby('Bennie','3','basketball');
  
+  console.log('task 3', bennie );
   
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
-    1. test 
-    2. 
-    3. 
-    4. 
+    1. Window or global object binding: when in the global scope, this will reference the window or console in its entirety.
+    2. Implicit binding: when a function is run with a dot preceding the function name, whatever object precedes the dot will be represented by this.
+    3. New binding: Within constructor functions, this represents the object that is created by the constructor function.
+    4. Explicit binding: When a function is invoked explicitly, this binds to the first argument passed through. 
   */
   
   
